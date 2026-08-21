@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Alice Eloá • 1 aninho</title>
+<meta name="description" content="Convite de aniversário — Alice Eloá, nas maravilhas de Deus">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="frame">
+
+  <!-- 1. Envelope / abertura -->
+  <section class="scene active" data-scene="primeira" id="scene-primeira">
+    <img src="assets/primeira.jpg" alt="Clique no envelope para abrir o convite" draggable="false">
+  </section>
+
+  <!-- 2. Vídeo -->
+  <section class="scene" data-scene="segunda" id="scene-segunda">
+    <video id="video-segunda" src="assets/segunda.mp4" playsinline webkit-playsinline preload="auto"></video>
+    <button class="gold-btn corner-br" data-action="skip-to-interactive">Clique aqui<br>para avançar</button>
+  </section>
+
+  <!-- 3. Vídeo -->
+  <section class="scene" data-scene="terceira" id="scene-terceira">
+    <video id="video-terceira" src="assets/terceira.mp4" playsinline webkit-playsinline preload="auto"></video>
+    <button class="gold-btn corner-br" data-action="skip-to-interactive">Clique aqui<br>para avançar</button>
+  </section>
+
+  <!-- 4. Vídeo -->
+  <section class="scene" data-scene="quarta" id="scene-quarta">
+    <video id="video-quarta" src="assets/quarta.mp4" playsinline webkit-playsinline preload="auto"></video>
+    <button class="gold-btn corner-br" data-action="skip-to-interactive">Clique aqui<br>para avançar</button>
+  </section>
+
+  <!-- 5. Convite interativo -->
+  <section class="scene" data-scene="quinta" id="scene-quinta">
+    <img src="assets/quinta.png" alt="Convite Alice Eloá — 1 ano" draggable="false">
+    <button class="gold-btn corner-tl" data-action="back-to-invite">Clique aqui para<br>voltar ao convite</button>
+    <button class="hotspot" data-action="rsvp" aria-label="Confirmar presença" style="left:19%; top:77.5%; width:21.5%; height:14%;"></button>
+    <button class="hotspot" data-action="location" aria-label="Ver localização" style="left:40%; top:77.5%; width:20%; height:14%;"></button>
+    <button class="hotspot" data-action="gift" aria-label="Sugestões de presente" style="left:60.3%; top:77.5%; width:21.5%; height:14%;"></button>
+  </section>
+
+  <!-- 6. Sugestões de presente -->
+  <section class="scene" data-scene="sexta" id="scene-sexta">
+    <img src="assets/sexta.png" alt="Sugestões de presente" draggable="false">
+    <button class="gold-btn corner-tl" data-action="back">Clique aqui<br>para voltar</button>
+  </section>
+
+  <button id="muteBtn" aria-label="Ativar ou desativar o som">&#128266;</button>
+
+  <audio id="bgm" src="assets/audio.mp3" loop preload="auto"></audio>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
